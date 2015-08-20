@@ -3,7 +3,8 @@ var gulp = require('gulp'),
   webpack = require('gulp-webpack'),
   connect = require('gulp-connect'),
   DIST = path.join(__dirname, '../', 'dist'),
-  entry = path.join(__dirname, '../', 'app', 'app.js');
+  entry = path.join(__dirname, '../', 'app', 'app.js'),
+  ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 var webpackConfig = function(watch) {
 	watch = watch || false;
@@ -16,12 +17,23 @@ var webpackConfig = function(watch) {
     devtool: 'eval',
     watch: watch,
     module: {
-      loaders: [{
-        test: /\.js$/,
-        exclude: /node_modules/,
-        loaders: ['babel-loader']
-      }]
-    }
+      loaders: [
+        {
+          test: /\.js$/,
+          exclude: /node_modules/,
+          loaders: ['babel-loader']
+        }, 
+        {
+          test: /\.scss$/,
+          loader: ExtractTextPlugin.extract('css!sass')
+        }
+      ]
+    },
+    plugins: [
+      new ExtractTextPlugin('[name].css', {
+        allChunks: true
+      })
+    ]
   };
 };
 
