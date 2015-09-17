@@ -21,7 +21,7 @@ var webpackConfig = function(watch) {
         {
           test: /\.js$/,
           exclude: /node_modules/,
-          loaders: ['babel-loader']
+          loaders: ['babel-loader?experimental&optional=runtime']
         }, 
         {
           test: /\.scss$/,
