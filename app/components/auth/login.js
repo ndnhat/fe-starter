@@ -1,7 +1,7 @@
 'use strict';
 import React from 'react';
 
-import '../../styles/login.scss';
+import '../../styles/app.css';
 
 class Login extends React.Component {
 	constructor (props) {
@@ -21,7 +21,7 @@ class Login extends React.Component {
 				{!this.state.valid && (
 					<div className="alert alert-danger" role="alert">
 					  Your email or password is invalid.
-					</div>				
+					</div>
 				)}
 				<form role="login" onSubmit={this.handleSubmit}>
 				  <div className="form-group">
