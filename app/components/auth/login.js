@@ -1,8 +1,6 @@
 'use strict';
 import React from 'react';
 
-import '../../styles/app.css';
-
 class Login extends React.Component {
 	constructor (props) {
 		super(props);

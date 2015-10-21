@@ -1,6 +1,6 @@
 var gulp = require('gulp'),
 	path = require('path'),
-	STYLES = path.join(__dirname, '../', 'public'),
+	STYLES = path.join(__dirname, '../', 'app', 'styles'),
 	index = path.join(__dirname, '../', 'public', 'index.html');
 
 module.exports = function() {

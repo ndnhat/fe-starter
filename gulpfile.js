@@ -23,6 +23,7 @@ gulp.task('watch', watch);
 gulp.task('dev', [
 	'clean',
 	'copy:public',
+  'style:build',
 	'webpack:dev',
 	'connect:start',
 	'watch'

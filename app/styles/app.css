@@ -1,3 +1,23 @@
 .login {
 	margin-top: 5em;
 }
+
+/* Testing autoprefixer */
+
+.autoprefixer {
+  display: flex;
+}
+
+
+/* Testing mixins */
+
+.mixinTest{
+	@mixin special-font;
+}
+
+
+/* Testing variables */
+
+.variableTest{
+	color: $main-color;
+}

@@ -3,8 +3,7 @@ var gulp = require('gulp'),
 	connect = require('gulp-connect'),
 	postcss = require('gulp-postcss'),
 	DIST = path.join(__dirname, '../', 'dist'),
-	PUBLIC = path.join(__dirname, '../', 'public'),
-	style = path.join(PUBLIC, 'app.css');
+	style = path.join(__dirname, '../', 'app', 'styles', 'app.css');
 
 var postcssImport = require('postcss-import'),
 	postcssMixins = require('postcss-mixins'),
