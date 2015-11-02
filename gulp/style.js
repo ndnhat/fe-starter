@@ -3,14 +3,14 @@ var gulp = require('gulp'),
 	connect = require('gulp-connect'),
 	postcss = require('gulp-postcss'),
 	DIST = path.join(__dirname, '../', 'dist'),
-	style = path.join(__dirname, '../', 'app', 'styles', 'app.css');
+	style = path.join(__dirname, '../', 'app', 'styles', 'main.css');
 
 var postcssImport = require('postcss-import'),
 	postcssMixins = require('postcss-mixins'),
 	postcssNeat = require('postcss-neat'),
 	postcssNested = require('postcss-nested'),
 	postcssVars = require('postcss-simple-vars'),
-	autoprefixer = require('autoprefixer-core'),
+	autoprefixer = require('autoprefixer'),
 	cssmqpacker = require('css-mqpacker');
 
 var mixins = require('../app/styles/mixins'),
@@ -19,8 +19,8 @@ var mixins = require('../app/styles/mixins'),
 var processors = [
 	postcssImport({ path: ['app/styles', 'node_modules'], glob: true }),
 	autoprefixer({ browers: ['last 2 versions', 'IE 9'] }),
-	postcssVars({ variables: variables }),
 	postcssMixins({ mixins: mixins }),
+	postcssVars({ variables: variables }),
 	postcssNeat({ neatMaxWidth: '70.5625em' }),
 	postcssNested,
 	cssmqpacker
