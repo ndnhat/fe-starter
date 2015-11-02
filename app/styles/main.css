@@ -23,7 +23,7 @@ $cool-color: #10CFBD;
 /* Testing mixins */
 
 .mixin-test{
-	@mixin special-font;
+	@mixin special-font 500;
 }
 
 .mixin-test-2{
