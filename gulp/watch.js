@@ -5,5 +5,5 @@ var gulp = require('gulp'),
 
 module.exports = function() {
 	gulp.watch(index, ['copy:html']);
-	gulp.watch(path.join(STYLES, 'app.css'), ['style:build']);
+	gulp.watch(path.join(STYLES, 'main.css'), ['style:build']);
 };
