@@ -21,7 +21,5 @@ In general, you can add new stylesheets (CSS or SCSS) in the `app/styles` folder
 
 ## Git demo
 
-Adds a sentence. 
-Adds a sentence. 
+Adds a sentence.
 Adds another one.
-
