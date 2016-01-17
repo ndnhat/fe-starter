@@ -19,4 +19,9 @@ You can develop modules and write tests using [ES6](https://github.com/lukehoban
 
 In general, you can add new stylesheets (CSS or SCSS) in the `app/styles` folder. Each component can require these stylesheets individually. See example in `app/components/auth/login.js`. At build time, all required styles will be extracted and put in `dist/main.css`. 
 
-## git demo
+## Git demo
+
+Adds a sentence. 
+Adds a sentence. 
+Adds another one.
+
