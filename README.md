@@ -18,3 +18,8 @@ You can develop modules and write tests using [ES6](https://github.com/lukehoban
 [Bootstrap](http://getbootstrap.com) is included by default but it's very easy to remove it. Simply go to `public/index.html` and remove the Bootstrap references.
 
 In general, you can add new stylesheets (CSS or SCSS) in the `app/styles` folder. Each component can require these stylesheets individually. See example in `app/components/auth/login.js`. At build time, all required styles will be extracted and put in `dist/main.css`. 
+
+## Git demo
+
+Adds a line.
+Add another line.
