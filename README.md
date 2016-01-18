@@ -23,8 +23,3 @@ In general, you can add new stylesheets (CSS or SCSS) in the `app/styles` folder
 
 Adds a line.
 Adds another line.
-
-Add even more lines.
-Add even more lines.
-Add even more lines.
-Add even more lines.
