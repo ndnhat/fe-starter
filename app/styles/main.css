@@ -1,0 +1,60 @@
+/* Testing mixin defined directly in CSS file*/
+
+@define-mixin color-size $color, $size{
+	color: $color;
+	font-size: $size;
+}
+
+/* Testing variable defined directly in CSS file */
+
+$cool-color: #10CFBD;
+
+.login {
+	margin-top: 5em;
+}
+
+/* Testing autoprefixer */
+
+.autoprefixer {
+  display: flex;
+}
+
+
+/* Testing mixins */
+
+.mixin-test{
+	@mixin special-font 500;
+}
+
+.mixin-test-2{
+	@mixin color-size #EEEEEE, 20px;
+}
+
+
+/* Testing variables */
+
+.variable-test{
+	color: $main-color;
+}
+
+.variable-test-2{
+	color: $cool-color;
+}
+
+
+/* Testing nested rules */
+
+h1{
+	font-style: italic;
+	&:hover{
+		font-weight: bold;
+		font-style: normal;
+	}
+	.mega-font{
+		font-size: 40px;
+		font-weight:600;
+		p{
+			font-size:3em;
+		}
+	}
+}
